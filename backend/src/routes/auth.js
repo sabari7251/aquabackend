@@ -21,7 +21,7 @@ console.log('--- auth.js: Loaded logger utility ---');
 // ADD THIS TRY-CATCH BLOCK AROUND THE EMAIL SERVICE IMPORT
 console.log('--- auth.js: About to load emailService utility ---');
 let sendWelcomeEmail;
-try {
+/*try {
   const emailService = require('../utils/emailService');
   sendWelcomeEmail = emailService.sendWelcomeEmail;
   console.log('--- auth.js: Successfully loaded emailService utility ---');
@@ -31,7 +31,7 @@ try {
   sendWelcomeEmail = async () => {
     console.log('--- Email service unavailable, skipping welcome email ---');
   };
-}
+} */
 
 console.log('--- auth.js: All imports completed ---');
 
