@@ -89,7 +89,6 @@ const startServer = async () => {
     // Use '0.0.0.0' to allow the server to accept connections from any host
     app.listen(PORT, '0.0.0.0', () => { 
       logger.info(`🌊 Ocean Hazard Backend Server running on port ${PORT}`);
-      logger.info(`Environment: ${process.env.NODE_ENV}`);
     });
   } catch (error) {
     logger.error('Failed to start server:', error);
